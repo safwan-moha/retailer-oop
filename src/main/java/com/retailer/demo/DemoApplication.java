@@ -41,6 +41,6 @@ public class DemoApplication implements CommandLineRunner {
 
     double netPayable = invoiceService.getNetPayable(bill);
 
-    System.err.println(netPayable);
+    invoiceService.printBill(bill);
   }
 }
