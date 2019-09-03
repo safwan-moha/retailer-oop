@@ -1,5 +1,7 @@
 package com.retailer.demo.beans.bill;
 
+import static com.retailer.demo.constants.Discount.GENERAL_AMOUNT;
+
 import com.retailer.demo.beans.item.Grocery;
 import com.retailer.demo.beans.item.Item;
 import com.retailer.demo.beans.user.User;
@@ -93,7 +95,7 @@ public class Bill {
 
     double total = calculateGrossTotal(nonGroceryItems);
 
-    return (int)(total / 100) * 5;
+    return (int)(total / 100) * GENERAL_AMOUNT.getDiscount();
   }
 
 }

@@ -1,6 +1,6 @@
 package com.retailer.demo.beans.user;
 
-import static com.retailer.demo.constants.DiscountPercentage.EMPLOYEE;
+import static com.retailer.demo.constants.Discount.EMPLOYEE_PERCENTAGE;
 
 public class Employee extends User {
 
@@ -20,7 +20,7 @@ public class Employee extends User {
   }
 
   public double calculateSpecialDiscount(double total) {
-    return total * EMPLOYEE.getDiscountPercentage() / 100;
+    return total * EMPLOYEE_PERCENTAGE.getDiscount() / 100;
   }
 
 }

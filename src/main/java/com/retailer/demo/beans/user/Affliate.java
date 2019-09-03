@@ -1,6 +1,6 @@
 package com.retailer.demo.beans.user;
 
-import static com.retailer.demo.constants.DiscountPercentage.AFFLIATE;
+import static com.retailer.demo.constants.Discount.AFFLIATE_PERCENTAGE;
 
 public class Affliate extends User {
 
@@ -20,7 +20,7 @@ public class Affliate extends User {
   }
 
   public double calculateSpecialDiscount(double total) {
-    return total * AFFLIATE.getDiscountPercentage() / 100;
+    return total * AFFLIATE_PERCENTAGE.getDiscount() / 100;
   }
 
 }
