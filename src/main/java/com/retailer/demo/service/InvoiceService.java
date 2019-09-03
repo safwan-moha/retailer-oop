@@ -9,11 +9,11 @@ public class InvoiceService {
 
   private int billNumber = 20000;
 
-  public int getNextBillNumber () {
+  public int getNextBillNumber() {
     return billNumber++;
   }
 
-  public double getNetPayable (Bill bill) {
+  public double getNetPayable(Bill bill) {
     User user = bill.getUser();
 
     double specialDiscount = user.calculateSpecialDiscount(bill.calculateGrossTotal());

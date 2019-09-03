@@ -22,5 +22,4 @@ public class Employee extends User {
   public double calculateSpecialDiscount(double total) {
     return total * EMPLOYEE_PERCENTAGE.getDiscount() / 100;
   }
-
 }

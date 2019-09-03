@@ -45,7 +45,7 @@ public class ItemTests {
   @Test
   public void testOldCustomerDiscount() {
     Date threeYearsAgo = new Date();
-    threeYearsAgo.setYear(threeYearsAgo.getYear() -3);
+    threeYearsAgo.setYear(threeYearsAgo.getYear() - 3);
     Customer user = new Customer(name, CLEANING_DEPARTMENT, threeYearsAgo);
     double discount = user.calculateSpecialDiscount(500);
 

@@ -38,18 +38,18 @@ public class BillTests {
   public void testCalculateGrossTotal() {
     bill.addItem(rice);
     bill.addItem(rice);
-    assertEquals(4.6, bill.calculateGrossTotal(),0);
+    assertEquals(4.6, bill.calculateGrossTotal(), 0);
   }
 
   @Test
   public void testCalculateBillDiscountGrocery() {
     bill.addItem(rice);
-    assertEquals(0, bill.calculateBillDiscount(),0);
+    assertEquals(0, bill.calculateBillDiscount(), 0);
   }
 
   @Test
   public void testCalculateBillDiscount() {
     bill.addItem(broom);
-    assertEquals(10, bill.calculateBillDiscount(),0);
+    assertEquals(10, bill.calculateBillDiscount(), 0);
   }
 }

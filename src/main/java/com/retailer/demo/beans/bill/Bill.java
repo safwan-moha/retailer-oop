@@ -90,12 +90,11 @@ public class Bill {
   public double calculateBillDiscount() {
     List<Item> nonGroceryItems = items
         .stream()
-        .filter(item -> item.getClass()!=Grocery.class)
+        .filter(item -> item.getClass() != Grocery.class)
         .collect(Collectors.toList());
 
     double total = calculateGrossTotal(nonGroceryItems);
 
-    return (int)(total / 100) * GENERAL_AMOUNT.getDiscount();
+    return (int) (total / 100) * GENERAL_AMOUNT.getDiscount();
   }
-
 }
