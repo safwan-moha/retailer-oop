@@ -27,14 +27,6 @@ public class Bill {
     date = new Date();
   }
 
-  public int getId() {
-    return id;
-  }
-
-  public void setId(int id) {
-    this.id = id;
-  }
-
   public User getUser() {
     return user;
   }
@@ -43,24 +35,8 @@ public class Bill {
     this.user = user;
   }
 
-  public Date getDate() {
-    return date;
-  }
-
-  public void setDate(Date date) {
-    this.date = date;
-  }
-
   public List<Item> getItems() {
     return items;
-  }
-
-  public void setItems(List<Item> items) {
-    this.items = items;
-  }
-
-  public double getDiscount() {
-    return discount;
   }
 
   public void setDiscount(double discount) {

@@ -36,7 +36,7 @@ public class ItemTests {
 
   @Test
   public void testNewCustomerDiscount() {
-    Customer user = new Customer(name, CLEANING_DEPARTMENT, new Date());
+    Customer user = new Customer(name, new Date());
     double discount = user.calculateSpecialDiscount(500);
 
     assertEquals(0, discount, 0);
@@ -46,7 +46,7 @@ public class ItemTests {
   public void testOldCustomerDiscount() {
     Date threeYearsAgo = new Date();
     threeYearsAgo.setYear(threeYearsAgo.getYear() - 3);
-    Customer user = new Customer(name, CLEANING_DEPARTMENT, threeYearsAgo);
+    Customer user = new Customer(name, threeYearsAgo);
     double discount = user.calculateSpecialDiscount(500);
 
     assertEquals(25, discount, 0);

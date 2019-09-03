@@ -35,6 +35,13 @@ public class BillTests {
   }
 
   @Test
+  public void testAddBillFail() {
+    assertEquals(0, bill.getItems().size());
+    bill.addItem(null);
+    assertEquals(0, bill.getItems().size());
+  }
+
+  @Test
   public void testCalculateGrossTotal() {
     bill.addItem(rice);
     bill.addItem(rice);

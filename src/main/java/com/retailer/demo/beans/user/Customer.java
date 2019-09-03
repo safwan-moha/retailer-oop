@@ -6,29 +6,11 @@ import java.util.Date;
 
 public class Customer extends User {
 
-  private int departmentId;
   private Date createdDate;
 
-  public Customer(String name, int departmentId, Date createdDate) {
+  public Customer(String name, Date createdDate) {
     super(name);
-    this.departmentId = departmentId;
     this.createdDate = createdDate;
-  }
-
-  public Date getCreatedDate() {
-    return createdDate;
-  }
-
-  public void setCreatedDate(Date createdDate) {
-    this.createdDate = createdDate;
-  }
-
-  public int getDepartmentId() {
-    return departmentId;
-  }
-
-  public void setDepartmentId(int departmentId) {
-    this.departmentId = departmentId;
   }
 
   public double calculateSpecialDiscount(double total) {
